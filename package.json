@@ -4,10 +4,10 @@
   "author": "OrderGroove Developers",
   "license": "MIT",
   "copyright": "2015",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library with DOM manipulation methods",
   "private": false,
-  "main": ".dist/dom",
+  "main": "gulpfile.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ordergroove/dom.git"
@@ -38,7 +38,6 @@
     "url": "https://github.com/ordergroove/dom/issues"
   },
   "homepage": "https://github.com/ordergroove/dom#readme",
-  "main": "gulpfile.js",
   "directories": {
     "test": "test"
   },
