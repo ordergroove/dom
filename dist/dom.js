@@ -5,7 +5,7 @@
 (function(doc, w, undefined) {
     'use strict';
 
-    var _ = require('./_misc');
+    var _ = require('misc');
 
     /**
      * DOM manipulation (adding classes, events, etc.)
@@ -371,8 +371,8 @@
     module.exports = dom;
 })(document, window);
 
-},{"./_misc":2}],2:[function(require,module,exports){
-// misc - v1.0.0 - License MIT
+},{"misc":2}],2:[function(require,module,exports){
+// misc - v1.0.1 - MIT License
 // 2015 (c) OrderGroove Developers
 
 (function() {

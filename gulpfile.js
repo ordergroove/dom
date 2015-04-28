@@ -42,7 +42,7 @@
     gulp.task('browserify:src', [ 'test' ], function() {
         return browserify({entries:[ paths.src ]})
             .bundle()
-            .pipe(source('dom.js'))
+            .pipe(source(pkg.name + '.js'))
             .pipe(gulp.dest('./dist/'))
     });
 

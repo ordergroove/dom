@@ -1,7 +1,7 @@
 (function(doc, w, undefined) {
     'use strict';
 
-    var _ = require('./_misc');
+    var _ = require('misc');
 
     /**
      * DOM manipulation (adding classes, events, etc.)
