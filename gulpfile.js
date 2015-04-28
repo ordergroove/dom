@@ -13,14 +13,14 @@
         del = require('del'),
         pkg = require('./package.json');
 
-    var banner = '// ' + pkg.name + ' - v' + pkg.version + ' - ' + pkg.license + ' License' +
+    var banner = '// ' + pkg.title + ' - v' + pkg.version + ' - ' + pkg.license + ' License' +
             '\n// ' +  pkg.copyright + ' (c) ' + pkg.author + '\n\n';
 
     // paths
     var paths = {
-        src: './src/' + pkg.name + '.js',
-        dist: './dist/' + pkg.name + '.js',
-        spec: './test/' + pkg.name + '.spec.js',
+        src: './src/' + pkg.title + '.js',
+        dist: './dist/' + pkg.title + '.js',
+        spec: './test/' + pkg.title + '.spec.js',
         output: './dist'
     };
 
@@ -42,7 +42,7 @@
     gulp.task('browserify:src', [ 'test' ], function() {
         return browserify({entries:[ paths.src ]})
             .bundle()
-            .pipe(source(pkg.name + '.js'))
+            .pipe(source(pkg.title + '.js'))
             .pipe(gulp.dest('./dist/'))
     });
 
