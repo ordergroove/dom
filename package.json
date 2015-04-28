@@ -1,0 +1,35 @@
+{
+  "title": "dom",
+  "name": "dom",
+  "author": "OrderGroove Developers",
+  "license": "MIT",
+  "copyright": "2015",
+  "version": "1.0.0",
+  "description": "Library with DOM manipulation methods",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ordergroove/dom"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "gulp": "3.8.11",
+    "karma": "~0.12.31",
+    "gulp-karma": "0.0.4",
+    "jasmine-core": "~2.2.0",
+    "karma-jasmine": "~0.3.5",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-spec-reporter": "0.0.19",
+    "browserify": "~9.0.8",
+    "vinyl-source-stream": "~1.1.0",
+    "gulp-rename": "~1.2.2",
+    "gulp-uglify": "~1.2.0",
+    "gulp-concat-util": "~0.5.2",
+    "del": "~1.1.1",
+    "gulp-jshint": "~1.10.0",
+    "jshint-stylish": "~1.0.1",
+    "gulp-jscs": "~1.6.0"
+  }
+}
