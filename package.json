@@ -15,6 +15,9 @@
   "scripts": {
     "test": "gulp test"
   },
+  "dependencies": {
+    "misc": "^1.0.2"
+  },
   "devDependencies": {
     "browserify": "~9.0.8",
     "del": "~1.1.1",
@@ -31,7 +34,6 @@
     "karma-jasmine": "~0.3.5",
     "karma-phantomjs-launcher": "~0.1.4",
     "karma-spec-reporter": "0.0.19",
-    "misc": "^1.0.2",
     "vinyl-source-stream": "~1.1.0"
   },
   "bugs": {
