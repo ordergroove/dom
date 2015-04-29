@@ -364,5 +364,11 @@
         return v;
     }());
 
-    module.exports = dom;
+    if (typeof define === 'function' && define.amd) {
+        define([], dom);
+    } else if (typeof exports === 'object') {
+        module.exports = dom;
+    } else {
+        window.dom = dom;
+    }
 })(document, window);
