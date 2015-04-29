@@ -7,7 +7,7 @@
   "version": "1.0.1",
   "description": "Library with DOM manipulation methods",
   "private": false,
-  "main": "gulpfile.js",
+  "main": "./dist/dom.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ordergroove/dom.git"
