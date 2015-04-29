@@ -4,7 +4,7 @@
   "author": "OrderGroove Developers",
   "license": "MIT",
   "copyright": "2015",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library with DOM manipulation methods",
   "private": false,
   "main": "./dist/dom.js",
