@@ -40,7 +40,10 @@
     });
 
     gulp.task('browserify:src', [ 'test' ], function() {
-        return browserify({entries:[ paths.src ]})
+        return browserify({
+                entries:[ paths.src ],
+                standalone: pkg.title
+            })
             .bundle()
             .pipe(source(pkg.title + '.js'))
             .pipe(gulp.dest('./dist/'))
