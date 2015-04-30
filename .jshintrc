@@ -33,6 +33,7 @@
         "spyOn": true,
         "require": true,
         "jasmine": true,
-        "setTimeout": true
+        "setTimeout": true,
+        "Event": true
     }
 }

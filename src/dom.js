@@ -79,6 +79,28 @@
     };
 
     /***
+     * trigger an event from an HTML element
+     * @method trigger
+     * @param {HTMLElement} el
+     * @param {string} type
+     */
+    dom.trigger = function(target, type) {
+        var ev;
+
+        if (dom._doc.createEvent) {
+            // try structure to avoid phantom bug with Event constructors
+            // https://github.com/ariya/phantomjs/issues/11289
+            try {
+                ev = new Event(type);
+                target.dispatchEvent(ev);
+            } catch (e) {}
+        } else {
+            ev = dom._doc.createEventObject();
+            target.fireEvent('on' + type, ev);
+        }
+    };
+
+    /***
      * Attach an event and remove it after it's called. Optionally add a long term function.
      * @method oneTimeEvent
      * @param {HTMLElement} el
