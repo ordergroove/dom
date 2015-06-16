@@ -95,7 +95,8 @@
             // try structure to avoid phantom bug with Event constructors
             // https://github.com/ariya/phantomjs/issues/11289
             try {
-                ev = new Event(type);
+                ev = document.createEvent('HTMLEvents');
+                ev.initEvent(type, true, false);
                 target.dispatchEvent(ev);
             } catch (e) {}
         } else {
