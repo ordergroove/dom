@@ -79,6 +79,32 @@
     };
 
     /***
+     * Prevent default behavior of an event object
+     * @method preventDefault
+     * @param {Event} e
+     */
+    dom.preventDefault = function(e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            e.returnValue = false;
+        }
+    };
+
+    /***
+     * Stop propagation of an event
+     * @method stopPropagation
+     * @param {Event} e
+     */
+    dom.stopPropagation = function(e) {
+        if (e.stopPropagation) {
+            e.stopPropagation();
+        } else {
+            e.cancelBubble = true;
+        }
+    };
+
+    /***
      * trigger an event from an HTML element
      * @method trigger
      * @param {HTMLElement} el
